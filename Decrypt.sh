@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ "$1" == "help" ]
+then
+	echo './Decrypt.sh <path to encrypted file> <encryption key file>'
+	exit 1
+fi
+
 if [ -z "$1" ]
 then
 	echo 'You must supply a encrypted file name'
